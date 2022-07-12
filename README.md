@@ -146,7 +146,7 @@ Part of the ``ReCo`` code is borrowed from [Parametric-Contrastive-Learning](htt
 
 <div align="center">
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=Davidzhangyuanhan.OmniBenchmark&left_color=green&right_color=red)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=zhangyuanhan-ai.OmniBenchmark&left_color=green&right_color=red)
 
 </div>
 
