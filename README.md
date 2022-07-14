@@ -18,7 +18,7 @@
 ---
 
 <div>
-    <a href='https://arxiv.org/abs/2203.07845' target='_blank'>[Paper]</a> 
+    <a href='https://github.com/ZhangYuanhan-AI/OmniBenchmark' target='_blank'>[Paper]</a> 
     •
     <a href='https://zhangyuanhan-ai.github.io/OmniBenchmark' target='_blank'>[Project Page]</a>
     •
