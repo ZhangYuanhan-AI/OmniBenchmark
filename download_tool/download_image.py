@@ -168,8 +168,8 @@ def main():
 
 
 if __name__ == "__main__":
-    root  = './OmniBenchmark/meta_url_4_challenge'
-    output_folder_root = './omniBenchmark_data'
+    root  = '../meta_url_4_challenge'
+    output_folder_root = '../meta'
     for file in os.listdir(root):
         args.input_path = os.path.join(root,file) 
         nid,status = file.split('.')
