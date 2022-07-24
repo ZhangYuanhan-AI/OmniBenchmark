@@ -47,7 +47,7 @@ cd download_tool
 #it may cost 2 hours
 python download_image.py
 ```
-After downlaoding you should see the following folder structure, i.e., a separate folder of images per realm: 
+After downloading you should see the following folder structure, i.e., a separate folder of images per realm: 
 
 ```
 <meta>
