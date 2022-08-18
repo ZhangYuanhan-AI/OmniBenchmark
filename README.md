@@ -39,7 +39,7 @@
 
 [07/2022] Code for ReCo has been released.
 
-[07/2022] [arXiv](https://github.com/ZhangYuanhan-AI/OmniBenchmark) paper has been released.
+[07/2022] [arXiv](https://arxiv.org/abs/2207.07106) paper has been released.
 
 
 ## About OmniBenchmark
