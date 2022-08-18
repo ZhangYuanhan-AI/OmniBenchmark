@@ -1,9 +1,9 @@
 model:
-    type: timm_vit
+    type: timm_vit_modified
     output_dim: 768
 
     kwargs:
-        pretrain_path: /mnt/lustre/zhangyuanhan/architech/mae_pretrain_vit_base.pth.convert
+        pretrain_path: /mnt/lustre/yhzhang/weights/Vision_Transformer/mae_vit_base_pt300.pth
 data:
     mean: [0.48145466, 0.4578275, 0.40821073]
     std: [0.26862954, 0.26130258, 0.27577711]

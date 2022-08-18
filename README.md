@@ -18,7 +18,7 @@
 ---
 
 <div>
-    <a href='https://arxiv.org/abs/2207.07106' target='_blank'>[Paper]</a> 
+    <a href='https://arxiv.org/abs/2203.07845' target='_blank'>[Paper]</a> 
     •
     <a href='https://zhangyuanhan-ai.github.io/OmniBenchmark' target='_blank'>[Project Page]</a>
     •
@@ -31,6 +31,8 @@
 </div>
 
 ## Updates
+[08/2022] We release OmniBenchmark V2 (More Clean).
+
 [07/2022] OmniBenchmark Challenge ECCV@2022 will start together with [ECCV 2022 SenseHuman Workshop](https://sense-human.github.io/).
 
 [07/2022] Dataset with hidden test has been released.
@@ -41,11 +43,16 @@
 
 
 ## About OmniBenchmark
+### OmniBenchamrk V2
+We use [Bamboo_ViT-B16](https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo) to clean up the OmniBenchmark following two solutions, producing the OmniBenchmark V2 (``meta_url_4_challenge_v2``). 
+- Delete images whose inference result lies outside its belonging realm. e.g. delete the image from the "bird" realm if its inference class is "tiger."
+- Clustering images by K-means and deleting clusters whose images are less than 2. Images from the such cluster are mostly noise.
+
 ### Download data and annotations
 ```
 cd download_tool
 #it may cost 2 hours
-python download_image.py
+pythoon download_image.py
 ```
 After downlaoding you should see the following folder structure, i.e., a separate folder of images per realm: 
 
@@ -114,17 +121,6 @@ e.g. add the information of activity dataset.
 - Change ``datasets=(activity aircraft)`` to ``datasets=(activity aircraft DEF GHI)``. DEF and GHI is the dataset name you want to evaluate, refered to ``linear_probe/configs/100p/config_DEF.yaml``.
 - ``sh linear_probe/multi_run_100p.sh``
 
-## Citation
-If you use this code in your research, please kindly cite this work.
-```
-@inproceedings{zhang2022omnibenchmark,
-      title={Benchmarking Omni-Vision Representation through the Lens of Visual Realms}, 
-      author={Yuanhan Zhang and Zhenfei Yin and Jing Shao and Ziwei Liu},
-      year={2022},
-      archivePrefix={arXiv},
-}
-```
-
 ## About relational contrastive (ReCo) learning
 ### Similarity information in ImageNet1k
 ``./ReCo/ImageNet1K.visual.3_hump.relation.depth_version.json`` provides the similarity information of classes in ImageNet1k (Equation 4 in the paper).
@@ -136,7 +132,16 @@ We can use ReCo loss ``./ReCo/losses.py`` in any supervised contrastive learning
 sh ./sh/train_resnet50_reco_imagenet1k.sh
 ```
 
-
+## Citation
+If you use this code in your research, please kindly cite this work.
+```
+@inproceedings{zhang2022omnibenchmark,
+      title={Benchmarking Omni-Vision Representation through the Lens of Visual Realms}, 
+      author={Yuanhan Zhang and Zhenfei Yin and Jing Shao and Ziwei Liu},
+      year={2022},
+      archivePrefix={arXiv},
+}
+```
 
 ## Acknowledgement
 
@@ -146,7 +151,7 @@ Part of the ``ReCo`` code is borrowed from [Parametric-Contrastive-Learning](htt
 
 <div align="center">
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=zhangyuanhan-ai.OmniBenchmark&left_color=green&right_color=red)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=Davidzhangyuanhan.OmniBenchmark&left_color=green&right_color=red)
 
 </div>
 

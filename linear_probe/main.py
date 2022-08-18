@@ -11,7 +11,6 @@ import yaml
 from PIL import Image
 from easydict import EasyDict
 
-import spring.linklink as link
 from torch.utils.data import DataLoader
 # from samplers import DistributedGivenIterationSampler
 import torch.distributed as dist
@@ -204,6 +203,7 @@ if __name__ ==  '__main__':
             
     # Backbone
     logger.info('==> Building backbone (frozen)..')
+    # import pdb;pdb.set_trace()
     backbone = getattr(models, model_config.model.type)(**model_config.model.get('kwargs', {}))
     backbone.requires_grad_(False)
     backbone.cuda()

@@ -1,5 +1,5 @@
 """Functions to load data from folders and augment them"""
-import mc
+# import mc
 
 import os
 import io
@@ -49,9 +49,8 @@ class ImageReader_ceph():
 
 
 def pil_loader(img_str):
-    buff = io.BytesIO(img_str)
-    
-    with Image.open(buff) as img:
+    # buff = io.BytesIO(img_str)
+    with Image.open(img_str) as img:
         img = img.convert('RGB')
     return img
     
@@ -327,7 +326,6 @@ class general_dataset(data.Dataset):
         """
         path, target = self.samples[index]
         target = int(target)
-        ceph = ImageReader()
         try:
             sample = pil_loader(os.path.join(self.root, path))
         except:

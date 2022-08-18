@@ -44,7 +44,7 @@ class MyViT(nn.Module):
         return features
 
 
-def timm_beit(**kwargs):
+def timm_vit(**kwargs):
 
     default_kwargs={}
     default_kwargs.update(**kwargs)
