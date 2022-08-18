@@ -31,7 +31,7 @@
 </div>
 
 ## Updates
-[08/2022] We release OmniBenchmark V2 (More Clean).
+[08/2022] We release OmniBenchmark V2 (More Clean) [[Statistics](https://zhangyuanhan-ai.github.io/OmniBenchmark/distribution/distribution_pure_statistics.html)].
 
 [07/2022] OmniBenchmark Challenge ECCV@2022 will start together with [ECCV 2022 SenseHuman Workshop](https://sense-human.github.io/).
 
@@ -43,39 +43,11 @@
 
 
 ## About OmniBenchmark
-### OmniBenchamrk V2
+### OmniBenchamrk V2 
 We use [Bamboo_ViT-B16](https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo) to clean up the OmniBenchmark following two solutions, producing the OmniBenchmark V2 (``meta_url_4_challenge_v2``). 
 - Delete images whose inference result lies outside its belonging realm. e.g. delete the image from the "bird" realm if its inference class is "tiger."
 - Clustering images by K-means and deleting clusters whose images are less than 2. Images from the such cluster are mostly noise.
 
-### Statistics
-**NOTED:** The training set is long-tail, the validation set is uniformly distributed.
-
-#### Train
-| activity | aircraft   | amphibian        | aquatic_vertebrate | bird                 | car             | consumer_goods |
-|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
-| 83944    | 41992      | 2136             | 2985               | 105073               | 77378           | 11842          |
-
-| creation | decoration | device           | food               | geological_formation | instrumentality | locomotive     |
-|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
-| 9205     | 2935       | 15104            | 35606              | 10192                | 6344            | 5188           |
-
-| mammal   | material   | military_vehicle | process            | region               | structure       | vascular_plant |
-|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
-| 46340    | 7289       | 7004             | 3581               | 14887                | 22293           | 48676          |
-
-#### Val
-| activity | aircraft   | amphibian        | aquatic_vertebrate | bird                 | car             | consumer_goods |
-|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
-| 3455     | 1185       | 100              | 210                | 3230                 | 3750            | 950            |
-
-| creation | decoration | device           | food               | geological_formation | instrumentality | locomotive     |
-|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
-| 525      | 220        | 1140             | 3365               | 550                  | 560             | 220            |
-
-| mammal   | material   | military_vehicle | process            | region               | structure       | vascular_plant |
-|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
-| 1920     | 485        | 360              | 230                | 1085                 | 1730            | 3355           |
 
 ### Download data and annotations
 ```
@@ -177,6 +149,9 @@ If you use this code in your research, please kindly cite this work.
 Thanks to Siyu Chen (https://github.com/Siyu-C) for implementing the linear_probe. \
 Thanks to Qinghong Sun for coordinating the data collection. \
 Part of the ``ReCo`` code is borrowed from [Parametric-Contrastive-Learning](https://github.com/dvlab-research/Parametric-Contrastive-Learning). 
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This dataset is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
 
 <div align="center">
 
