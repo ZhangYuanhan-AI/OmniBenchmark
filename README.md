@@ -48,6 +48,35 @@ We use [Bamboo_ViT-B16](https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo) 
 - Delete images whose inference result lies outside its belonging realm. e.g. delete the image from the "bird" realm if its inference class is "tiger."
 - Clustering images by K-means and deleting clusters whose images are less than 2. Images from the such cluster are mostly noise.
 
+### Statistics
+**NOTED:** The training set is long-tail, the validation set is uniformly distributed.
+
+#### Train
+| activity | aircraft   | amphibian        | aquatic_vertebrate | bird                 | car             | consumer_goods |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 83944    | 41992      | 2136             | 2985               | 105073               | 77378           | 11842          |
+
+| creation | decoration | device           | food               | geological_formation | instrumentality | locomotive     |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 9205     | 2935       | 15104            | 35606              | 10192                | 6344            | 5188           |
+
+| mammal   | material   | military_vehicle | process            | region               | structure       | vascular_plant |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 46340    | 7289       | 7004             | 3581               | 14887                | 22293           | 48676          |
+
+#### Val
+| activity | aircraft   | amphibian        | aquatic_vertebrate | bird                 | car             | consumer_goods |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 3455     | 1185       | 100              | 210                | 3230                 | 3750            | 950            |
+
+| creation | decoration | device           | food               | geological_formation | instrumentality | locomotive     |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 525      | 220        | 1140             | 3365               | 550                  | 560             | 220            |
+
+| mammal   | material   | military_vehicle | process            | region               | structure       | vascular_plant |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 1920     | 485        | 360              | 230                | 1085                 | 1730            | 3355           |
+
 ### Download data and annotations
 ```
 cd download_tool
