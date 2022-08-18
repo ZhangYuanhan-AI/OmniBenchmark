@@ -18,7 +18,7 @@
 ---
 
 <div>
-    <a href='https://arxiv.org/abs/2203.07845' target='_blank'>[Paper]</a> 
+    <a href='https://arxiv.org/abs/2207.07106' target='_blank'>[Paper]</a> 
     •
     <a href='https://zhangyuanhan-ai.github.io/OmniBenchmark' target='_blank'>[Project Page]</a>
     •
@@ -151,7 +151,7 @@ Part of the ``ReCo`` code is borrowed from [Parametric-Contrastive-Learning](htt
 
 <div align="center">
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=Davidzhangyuanhan.OmniBenchmark&left_color=green&right_color=red)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=zhangyuanhan-ai.OmniBenchmark&left_color=green&right_color=red)
 
 </div>
 
