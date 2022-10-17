@@ -31,7 +31,7 @@
 </div>
 
 ## Updates
-[08/2022] We release OmniBenchmark V2 (More Clean) [[Statistics](https://zhangyuanhan-ai.github.io/OmniBenchmark/distribution/distribution_pure_statistics.html)].
+[08/2022] We release OmniBenchmark V2 (More Clean) [[Statistics](https://entuedu-my.sharepoint.com/:x:/g/personal/yuanhan002_e_ntu_edu_sg/EQs1hw3MYC1BiF6F1ERQ0koBegQHg54Mv2tV08p_KAdQgw?e=NusVKC)].
 
 [07/2022] OmniBenchmark Challenge ECCV@2022 will start together with [ECCV 2022 SenseHuman Workshop](https://sense-human.github.io/).
 
@@ -161,3 +161,15 @@ Part of the ``ReCo`` code is borrowed from [Parametric-Contrastive-Learning](htt
 
 
 
+
+| activity | aircraft   | amphibian        | aquatic_vertebrate | bird                 | car             | consumer_goods |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 83944    | 41992      | 2136             | 2985               | 105073               | 77378           | 11842          |
+
+| creation | decoration | device           | food               | geological_formation | instrumentality | locomotive     |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 9205     | 2935       | 15104            | 35606              | 10192                | 6344            | 5188           |
+
+| mammal   | material   | military_vehicle | process            | region               | structure       | vascular_plant |
+|----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
+| 46340    | 7289       | 7004             | 3581               | 14887                | 22293           | 48676          |
