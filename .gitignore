@@ -144,3 +144,6 @@ find_realname.py
 get_hidden_test.py
 meta_url
 *.test_annotation
+meta_url_4_challenge_v2_norepeat
+README_private.md
+meta_v2/*/test.txt

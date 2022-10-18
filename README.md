@@ -44,9 +44,16 @@
 
 ## About OmniBenchmark
 ### OmniBenchamrk V2 
+#### Clean Strategy
 We use [Bamboo_ViT-B16](https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo) to clean up the OmniBenchmark following two solutions, producing the OmniBenchmark V2 (``meta_url_4_challenge_v2``). 
 - Delete images whose inference result lies outside its belonging realm. e.g. delete the image from the "bird" realm if its inference class is "tiger."
 - Clustering images by K-means and deleting clusters whose images are less than 2. Images from the such cluster are mostly noise.
+
+#### Local Meta File
+The meta file at local is ``meta_v2``, the test set will be released at 2022.Oct.30
+
+#### trainid2name 
+The trainid of OmniBenchamrk V2 is different from V1, we release the mapping file ``trainid2name_v2.json``
 
 
 ### Download data and annotations
@@ -88,7 +95,7 @@ XXXXXX 1
 XXXXXX 2
 ...
 ``` 
-You can find the name of ``trainid`` through ``trainid2name.json``. 
+You can find the name of ``trainid`` through ``trainid2name.json`` (``trainid2name_v2.json``). 
 
 
 ## Evaluating a model on the OmniBenchmark
@@ -162,7 +169,7 @@ Part of the ``ReCo`` code is borrowed from [Parametric-Contrastive-Learning](htt
 
 
 
-| activity | aircraft   | amphibian        | aquatic_vertebrate | bird                 | car             | consumer_goods |
+<!-- | activity | aircraft   | amphibian        | aquatic_vertebrate | bird                 | car             | consumer_goods |
 |----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
 | 83944    | 41992      | 2136             | 2985               | 105073               | 77378           | 11842          |
 
@@ -172,4 +179,4 @@ Part of the ``ReCo`` code is borrowed from [Parametric-Contrastive-Learning](htt
 
 | mammal   | material   | military_vehicle | process            | region               | structure       | vascular_plant |
 |----------|------------|------------------|--------------------|----------------------|-----------------|----------------|
-| 46340    | 7289       | 7004             | 3581               | 14887                | 22293           | 48676          |
+| 46340    | 7289       | 7004             | 3581               | 14887                | 22293           | 48676          | -->
