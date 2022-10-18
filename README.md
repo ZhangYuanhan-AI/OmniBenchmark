@@ -52,8 +52,12 @@ We use [Bamboo_ViT-B16](https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo) 
 #### Local Meta File
 The meta file at local is ``meta_v2``, the test set will be released at 2022.Oct.30
 
-#### trainid2name 
+#### Trainid and its name
 The trainid of OmniBenchamrk V2 is different from V1, we release the mapping file ``trainid2name_v2.json``
+
+#### Evaluation Protocol
+- You should train on train.txt, hyper-parameter search on val.txt and finally evaluate on test.txt.
+- The V2 results of recent methods will be released soon.
 
 
 ### Download data and annotations
@@ -84,7 +88,8 @@ After downlaoding you should see the following folder structure, i.e., a separat
 ```
 Please refer to ``download_tool/README.txt`` for the detail information of your downloaded files.
 
-**IMPORTANT:** Each realm dataset has a train/val/test set, the annotation of the test is hidden *currently* for OmniBenchmark Challenge @ ECCV2022 and will be public after then. The result in the paper is evaluated on the test+val set.
+**IMPORTANT:** 
+- Each realm dataset has a train/val/test set, the annotation of the test is hidden *currently* for OmniBenchmark Challenge @ ECCV2022 and will be public after then. The result in the paper is evaluated on the test+val set.
 
 ### Find the class name 
 In downloaded meta files (e.g. car.val), each line of the file is a data record, including the local image path and the corresponding label, separated by a space.
