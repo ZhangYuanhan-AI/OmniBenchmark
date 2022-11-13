@@ -31,6 +31,8 @@
 </div>
 
 ## Updates
+[11/2022] We upload the tar file of the OmiBenchmark V2 at [[HERE](https://entuedu-my.sharepoint.com/:f:/g/personal/yuanhan002_e_ntu_edu_sg/El2wmbzutJBOlu8Tz9HyDJABMmFtsG_8mq7uGh4Q7F1QSQ?e=NyroDS)]
+
 [08/2022] We release OmniBenchmark V2 (More Clean) [[Statistics](https://entuedu-my.sharepoint.com/:x:/g/personal/yuanhan002_e_ntu_edu_sg/EQs1hw3MYC1BiF6F1ERQ0koBegQHg54Mv2tV08p_KAdQgw?e=NusVKC)].
 
 [07/2022] OmniBenchmark Challenge ECCV@2022 will start together with [ECCV 2022 SenseHuman Workshop](https://sense-human.github.io/).
@@ -49,9 +51,6 @@ We use [Bamboo_ViT-B16](https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo) 
 - Delete images whose inference result lies outside its belonging realm. e.g. delete the image from the "bird" realm if its inference class is "tiger."
 - Clustering images by K-means and deleting clusters whose images are less than 2. Images from the such cluster are mostly noise.
 
-#### Local Meta File
-The meta file at local is ``meta_v2``, the test set will be released at 2022.Oct.30
-
 #### Trainid and its name
 The trainid of OmniBenchamrk V2 is different from V1, we release the mapping file ``trainid2name_v2.json``
 
@@ -61,6 +60,16 @@ The trainid of OmniBenchamrk V2 is different from V1, we release the mapping fil
 
 
 ### Download data and annotations
+
+**IMPORTANT:** 
+- You can download the data and annotation of OmniBenchamrk V2 at [[HERE](https://entuedu-my.sharepoint.com/:f:/g/personal/yuanhan002_e_ntu_edu_sg/El2wmbzutJBOlu8Tz9HyDJABMmFtsG_8mq7uGh4Q7F1QSQ?e=NyroDS)]. Afer you have downloaded 9 ``omnibenchmark_v2_onedrive.tar.*`` files, you can untar them using 
+
+```
+cat omnibenchmark_v2_onedrive.tar.gz.* | tar -xvf
+```
+
+For the downloading of OmniBenchamrk V1, you should follow the following step.
+
 ```
 cd download_tool
 #it may cost 2 hours
@@ -87,9 +96,6 @@ After downlaoding you should see the following folder structure, i.e., a separat
 ...
 ```
 Please refer to ``download_tool/README.txt`` for the detail information of your downloaded files.
-
-**IMPORTANT:** 
-- Each realm dataset has a train/val/test set, the annotation of the test is hidden *currently* for OmniBenchmark Challenge @ ECCV2022 and will be public after then. The result in the paper is evaluated on the test+val set.
 
 ### Find the class name 
 In downloaded meta files (e.g. car.val), each line of the file is a data record, including the local image path and the corresponding label, separated by a space.
