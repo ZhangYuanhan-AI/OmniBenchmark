@@ -31,7 +31,7 @@
 </div>
 
 ## Updates
-[11/2022] We upload the tar file of the OmiBenchmark V2 at [[HERE](https://entuedu-my.sharepoint.com/:f:/g/personal/yuanhan002_e_ntu_edu_sg/El2wmbzutJBOlu8Tz9HyDJABMmFtsG_8mq7uGh4Q7F1QSQ?e=NyroDS)]
+[11/2022] We upload the tar file of the OmiBenchmark V2 at [[HERE](https://entuedu-my.sharepoint.com/:f:/g/personal/yuanhan002_e_ntu_edu_sg/El2wmbzutJBOlu8Tz9HyDJABMmFtsG_8mq7uGh4Q7F1QSQ?e=7V5OMR)]
 
 [08/2022] We release OmniBenchmark V2 [[Statistics](https://entuedu-my.sharepoint.com/:x:/g/personal/yuanhan002_e_ntu_edu_sg/EQs1hw3MYC1BiF6F1ERQ0koBegQHg54Mv2tV08p_KAdQgw?e=NusVKC)].
 
