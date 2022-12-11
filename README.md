@@ -154,11 +154,13 @@ sh ./sh/train_resnet50_reco_imagenet1k.sh
 ## Citation
 If you use this code in your research, please kindly cite this work.
 ```
-@inproceedings{zhang2022omnibenchmark,
-      title={Benchmarking Omni-Vision Representation through the Lens of Visual Realms}, 
-      author={Yuanhan Zhang and Zhenfei Yin and Jing Shao and Ziwei Liu},
-      year={2022},
-      archivePrefix={arXiv},
+@inproceedings{zhang2022benchmarking,
+  title={Benchmarking omni-vision representation through the lens of visual realms},
+  author={Zhang, Yuanhan and Yin, Zhenfei and Shao, Jing and Liu, Ziwei},
+  booktitle={European Conference on Computer Vision},
+  pages={594--611},
+  year={2022},
+  organization={Springer}
 }
 ```
 
