@@ -31,7 +31,9 @@
 </div>
 
 ## Updates
-[11/2022] We upload the tar file of the OmiBenchmark V2 at [[HERE](https://entuedu-my.sharepoint.com/:f:/g/personal/yuanhan002_e_ntu_edu_sg/El2wmbzutJBOlu8Tz9HyDJABMmFtsG_8mq7uGh4Q7F1QSQ?e=7V5OMR)]
+[12/2022] For users in mainland China, you can also download OmniBenchmark v2 at [[HERE](https://opendatalab.org.cn/OmniBenchmark)]. Thanks for the [OpenDataLab](https://opendatalab.com/).
+
+[11/2022] We upload the tar file of the OmiBenchmark V2 at [[HERE](https://entuedu-my.sharepoint.com/:f:/g/personal/yuanhan002_e_ntu_edu_sg/El2wmbzutJBOlu8Tz9HyDJABMmFtsG_8mq7uGh4Q7F1QSQ?e=7V5OMR)]. [md5sum](https://github.com/ZhangYuanhan-AI/OmniBenchmark/issues/5)
 
 [08/2022] We release OmniBenchmark V2 [[Statistics](https://entuedu-my.sharepoint.com/:x:/g/personal/yuanhan002_e_ntu_edu_sg/EQs1hw3MYC1BiF6F1ERQ0koBegQHg54Mv2tV08p_KAdQgw?e=NusVKC)].
 
